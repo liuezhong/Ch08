@@ -178,7 +178,7 @@ def setDataCollect(retX, retY):
     
 def crossValidation(xArr,yArr,numVal=10):
     m = len(yArr)                           
-    indexList = range(m)
+    indexList = list(range(m))
     errorMat = zeros((numVal,30))#create error mat 30columns numVal rows
     for i in range(numVal):
         trainX=[]; trainY=[]
